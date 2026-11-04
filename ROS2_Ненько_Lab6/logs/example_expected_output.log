@@ -1,0 +1,12 @@
+# ПРИКЛАД ФОРМАТУ (не реальний запуск). Замініть реальними логами з ВМ.
+[INFO] [1762171200.101000000] [sensor_node]: Sensor node started
+[INFO] [1762171200.102000000] [heartbeat_node]: Heartbeat node started: topic=/heartbeat, period=1.0s
+[INFO] [1762171200.103000000] [monitor_node]: Monitor node started
+[INFO] [1762171200.601000000] [sensor_node]: Published /sensor_data: 24.87
+[INFO] [1762171200.602000000] [monitor_node]: Sensor data received: 24.87
+[INFO] [1762171201.102000000] [heartbeat_node]: Heartbeat sent: alive #1
+[INFO] [1762171201.104000000] [monitor_node]: System status: STABLE
+[WARN] [1762171203.601000000] [sensor_node]: Sensor unstable: value=33.41 is out of range [18.0, 32.0]
+[ERROR] [1762171214.601000000] [sensor_node]: Connection lost: sensor is not responding
+[WARN] [1762171230.104000000] [monitor_node]: Heartbeat delayed: 2.6s
+[ERROR] [1762171233.104000000] [monitor_node]: Heartbeat lost for 5.1s: node is not working

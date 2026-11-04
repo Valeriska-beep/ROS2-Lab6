@@ -1,0 +1,15 @@
+diff --git a/heartbeat_node.py b/heartbeat_node.py
+index 96ef007..2919c49 100755
+--- a/heartbeat_node.py
++++ b/heartbeat_node.py
+@@ -4,8 +4,8 @@ import rclpy
+ from rclpy.node import Node
+ from std_msgs.msg import String
+ 
+-HEARTBEAT_TOPIC = '/heartbeat'
+-HEARTBEAT_PERIOD = 1.0        # с
++HEARTBEAT_TOPIC = '/heartbeet'
++HEARTBEAT_PERIOD = 10.0       # с
+ 
+ 
+ class HeartbeatNode(Node):

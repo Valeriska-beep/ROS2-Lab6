@@ -1,0 +1,3 @@
+a7540ff Revert "Introduce bug: wrong heartbeat topic and period"
+98ba028 Introduce bug: wrong heartbeat topic and period
+01e4d8f Stable version
