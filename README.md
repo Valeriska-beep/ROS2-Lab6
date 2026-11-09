@@ -410,3 +410,9 @@ git status                                             # modified
 git restore sensor_node_pkg/sensor_node.py             # rollback
 git status                                             # working tree clean
 ```
+Перевіряємо, чи код відновився
+
+```bash
+python3 -m py_compile sensor_node_pkg/sensor_node.py
+```
+Якщо термінал нічого не вивів — чудово! Це означає, що синтаксичних помилок більше немає.
