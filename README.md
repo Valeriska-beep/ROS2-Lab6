@@ -416,3 +416,29 @@ git status                                             # working tree clean
 python3 -m py_compile sensor_node_pkg/sensor_node.py
 ```
 Якщо термінал нічого не вивів — чудово! Це означає, що синтаксичних помилок більше немає.
+
+Перевіряємо роботу, перший термінал:
+```bash
+cd ~/ros2_ws
+source /opt/ros/humble/setup.bash
+colcon build --packages-select sensor_node_pkg
+source install/setup.bash
+```
+
+Запускаємо відновлену ноду:
+
+```bash
+ros2 run sensor_node_pkg sensor_node
+```
+
+У другому терміналі перевіряємо heartbeat:
+
+```bash
+source /opt/ros/humble/setup.bash
+source ~/ros2_ws/install/setup.bash
+ros2 topic echo /heartbeat
+```
+
+Маємо знову побачити повідомлення ALIVE.
+
+Це вже підтверджує, що після відновлення коду нода запускається та публікує повідомлення.
